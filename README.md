@@ -2,7 +2,14 @@
 
 ###
 
-<p align="center">I'm Martin, Software Engineer at <a href="https://buffer.com" rel="nofollow">Buffer</a> and crafting <a href="https://palabreja.com" rel="nofollow">Palabreja</a>, <a href="https://voices.ink" rel="nofollow">Voices.ink</a> & <a href="https://codetoolbox.dev" rel="nofollow">Code Toolbox</a></p>
+<p align="center">I'm Martin, Software Engineer at <a href="https://buffer.com">Buffer</a>. Formerly <a href="https://newrelic.com/">NewRelic</a> and <a href="https://www.thoughtworks.com/">ThoughtWorks</a>.</p>
+
+<p align="center">Indie Hacker building:</p>
+<p align="center">
+   <a href="https://palabreja.com"><img src="https://palabreja.com/favicon.ico" alt="" height="14"/> Palabreja</a><br/>
+   <a href="https://voices.ink"><img src="https://voices.ink/favicon.ico" alt="" height="14"/> Voices.ink</a><br/>
+   <a href="https://codetoolbox.dev"><img src="https://codetoolbox.dev/favicon.ico" alt="" height="14"/> Code Toolbox</a><br/>
+</div>
 
 ###
 
