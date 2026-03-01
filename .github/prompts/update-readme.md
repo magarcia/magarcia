@@ -1,0 +1,32 @@
+You are updating the README.md for a GitHub profile repository.
+
+## Instructions
+
+1. Read `/tmp/rss.xml` and `/tmp/repos.json`.
+2. Read the current `README.md`.
+3. Update ONLY the content between marker pairs. Do NOT modify anything outside the markers.
+
+## BLOG section (`<!-- BLOG:START -->` … `<!-- BLOG:END -->`)
+
+- Extract the 5 most recent posts from the RSS feed.
+- Format each as: `- [Title](url)`
+- Use the `<link>` element from each RSS `<item>` for the URL.
+
+## PROJECTS section (`<!-- PROJECTS:START -->` … `<!-- PROJECTS:END -->`)
+
+- Select 4–8 notable repos from the JSON data.
+- A repo is notable if it has stars > 0 OR was pushed in the last 90 days AND has a description.
+- Format each as: `- [**name**](html_url) — description`
+- Sort by most recently pushed first.
+- **Always include Palabreja** with URL `https://palabreja.com` (not the GitHub repo URL) and description "A Spanish word game."
+
+## After editing
+
+1. Run `git diff` to verify only content between markers changed.
+2. If there are no changes, stop — do not create an empty commit.
+3. If there are changes:
+   ```
+   git add README.md
+   git commit -m "chore: update README content [skip ci]"
+   git push
+   ```

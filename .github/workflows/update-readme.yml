@@ -1,0 +1,39 @@
+name: Update README
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch RSS feed
+        run: curl -s https://magarcia.io/rss.xml > /tmp/rss.xml
+
+      - name: Fetch repos
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api 'users/magarcia/repos?sort=pushed&per_page=30&type=owner' \
+            --jq '[.[] | select(.fork == false and .archived == false and .description != null)]' \
+            > /tmp/repos.json
+
+      - name: Update README with Claude
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt_file: .github/prompts/update-readme.md
+          allowed_tools: |
+            Read
+            Edit
+            Bash(git diff)
+            Bash(git add README.md)
+            Bash(git commit *)
+            Bash(git push)
