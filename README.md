@@ -22,11 +22,11 @@ I'm Martin — software engineer at [Buffer](https://buffer.com), previously at 
 ## Recent writing
 
 <!-- BLOG:START -->
-- [Moving Shell Secrets from .zshrc to 1Password CLI](https://magarcia.io/2026/02/22/moving-shell-secrets-from-zshrc-to-1password-cli)
-- [Your Test Output Is Burning Tokens](https://magarcia.io/2026/02/08/your-test-output-is-burning-tokens)
-- [AI-Native Development](https://magarcia.io/2026/01/25/ai-native-development)
-- [Breaking the QR Limit: Serverless WebRTC Protocol](https://magarcia.io/2026/01/19/breaking-the-qr-limit-serverless-webrtc-protocol)
-- [Why I Switched from Bun to Deno for Claude Code Skills](https://magarcia.io/2026/01/13/why-i-switched-from-bun-to-deno-for-claude-code-skills)
+- [Using Claude Code Agent Teams for Incident Investigation](https://magarcia.io/using-claude-code-agent-teams-for-incident-investigation/)
+- [Moving Shell Secrets from .zshrc to 1Password CLI](https://magarcia.io/stop-hardcoding-secrets-in-your-zshrc/)
+- [AI-Native Development: When Building Is Faster Than Planning](https://magarcia.io/when-ai-made-building-cheaper-than-the-meetings-to-plan-it/)
+- [Breaking the QR Limit: The Discovery of a Serverless WebRTC Protocol](https://magarcia.io/air-gapped-webrtc-breaking-the-qr-limit/)
+- [Why I Switched from Bun to Deno for Claude Code Skills](https://magarcia.io/why-i-switched-from-bun-to-deno-for-claude-code-skills/)
 <!-- BLOG:END -->
 
 ---
