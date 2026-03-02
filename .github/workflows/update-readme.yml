@@ -64,4 +64,3 @@ jobs:
                git push
                ```
           claude_args: '--allowedTools Read Edit "Bash(git diff*)" "Bash(git add README.md)" "Bash(git commit *)" "Bash(git push)"'
-          show_full_output: true
