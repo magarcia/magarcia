@@ -63,17 +63,5 @@ jobs:
                git commit -m "chore: update README content [skip ci]"
                git push
                ```
-          settings: |
-            {
-              "permissions": {
-                "allow": [
-                  "Read",
-                  "Edit",
-                  "Bash(git diff*)",
-                  "Bash(git add README.md)",
-                  "Bash(git commit *)",
-                  "Bash(git push)"
-                ],
-                "deny": []
-              }
-            }
+          claude_args: '--allowedTools Read Edit "Bash(git diff*)" "Bash(git add README.md)" "Bash(git commit *)" "Bash(git push)"'
+          show_full_output: true
